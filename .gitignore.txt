@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.swp
+.DS_Store
+*.log
+*.csv
+*.mp4
+*.avi
+*.mov
+*.png
+*.jpg
+.env/
+venv/
+.idea/
+.vscode/
