@@ -15,7 +15,6 @@ def init_colorizer(use_gpu):
 
 
 # Function to process each frame with SIGGRAPH17
-# Function to process each frame with SIGGRAPH17
 def process_frame(img_path,colorizer, use_gpu, save_prefix_bw, save_prefix_color):
     # Load the SIGGRAPH17 colorizer model, eval() puts the model in inference/ output generation mode instead of training
     # colorizer_siggraph17 = siggraph17(pretrained=True).eval()
@@ -51,7 +50,6 @@ def process_frame(img_path,colorizer, use_gpu, save_prefix_bw, save_prefix_color
     plt.imsave(f'{save_prefix_color}.png', out_img_siggraph17)
 
 
-# Main function to loop through all frames in the folder
 # Main function to loop through all frames in the folder
 def process_all_frames(frames_folder, output_folder, use_gpu):
     # Create output subfolders
