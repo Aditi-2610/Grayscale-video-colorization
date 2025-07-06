@@ -66,11 +66,40 @@ Evaluates quality using LPIPS, ΔE, and PSNR metrics 📊
 
 It’s an end-to-end automated solution for turning the past vivid again ✨
 
-🚧 Coming Soon:
-🎬 Frame-to-video conversion (Day 7)
+## ⚙️ How to Run the Pipeline
 
-📊 Plotting and evaluation (Day 8)
+Make sure dependencies are installed:
 
-🌟 Sample outputs and demo videos (Day 10)
+```bash
+pip install -r requirements.txt
+
+1️⃣ Extract Frames:
+python Frames.py
+
+What it does:
+Downloads video from YouTube
+Starts at your chosen time
+Saves extracted frames in /frames or /data/sample_frames
+
+2️⃣ Colorize the Frames
+python frames_to_color.py -i frames/ -o outputs/ --use_gpu
+
+- Requires PyTorch & pretrained model
+- Use --use_gpu for faster processing
+
+3️⃣ Convert Frames to Video
+python frames_to_video.py
+
+What it does:
+Stitches colorized PNGs into output_video.mp4
+
+4️⃣ Evaluate Quality
+python evaluation_and_plot.py
+
+What it does:
+Calculates LPIPS, ΔE, UV_PSNR, and colorfulness
+Saves metric plots to data/plots/
+
+
 
 
