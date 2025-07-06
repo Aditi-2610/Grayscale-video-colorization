@@ -43,6 +43,14 @@ python Frames.py
 ├── requirements.txt       # All required packages
 └── README.md              # You’re looking at it 👀
 
+## 🎬 Demo Snapshot
+
+Here’s a peek at the colorization in action 👇
+
+▶️ [Watch output video](./results/output_video_colorfulNature.mp4)
+
+> From grayscale to vibrant — one frame at a time 🌈
+
 
 🔧 Project Overview
 This project brings life and color to black-and-white videos!
